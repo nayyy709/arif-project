@@ -9,6 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Pengkajian Awal Keperawatan dan Medis Pasien Rawat Inap Dewasa</title>
+
+    <style>
+      p{
+        font-size: 12px;
+      }
+      h5{
+        font-size: 15px;
+      }
+      h6{
+        font-size: 14px;
+      }
+    </style>
+
   </head>
   <body>
 
@@ -23,34 +36,34 @@
           <form>
           <td >
             <div class="row">
-              <div class="col-4">
+              <div class="col-5">
                 <label>No.RM</label>
               </div>
-              <div class="col-8">
+              <div class="col-7">
                 <input class="form-control" type="text" name="" id="">
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col-5">
                 <label>Nama Lengkap</label>
               </div>
-              <div class="col-8">
+              <div class="col-7">
                 <input class="form-control" type="text" name="" id="">
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col-5">
                 <label>Tanggal Lahir</label>
               </div>
-              <div class="col-8">
+              <div class="col-7">
                 <input class="form-control" type="date" name="" id="">
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col-5">
                 <label>NIK</label>
               </div>
-              <div class="col-8">
+              <div class="col-7">
                 <input class="form-control" type="text" name="" id="">
               </div>
             </div>
@@ -58,7 +71,7 @@
         </tr>
       </table>
 
-      <table class="table table-bordered" style="border:1px solid black;">
+      <table class="table table-bordered mb-0" style="border:1px solid black;">
         <tr>
           <td class="text-center" style="background-color: tan;">
             <h5>PENGKAJIAN KEPERAWATAN</h5>
@@ -66,12 +79,12 @@
         </tr>
       </table>
 
-      <table class="table table-bordered" style="border:1px solid black;">
+      <table class="table table-bordered mb-0" style="border:1px solid black;">
         <tr>
-          <td>
+          <td  colspan="2">
             <div class="row align-items-center">
               <div class="col-2">
-                <label>Masuk Ruang Rawat:</label>
+                <label>Masuk Ruang Rawat :</label>
               </div>
               <div class="col-2">
                 <input class="form-control"type="text" name="" id>
@@ -85,28 +98,700 @@
               <div class="col-1">
                 <label>Tanggal/Jam</label>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <input class="form-control" type="datetime-local" name="" id="">
               </div>
 
-              <div class="row align-items-center"></div>
-              <div class="col">
-                <label>Sumber Data</label>
-              </div>
-              <div class="col">
-                <input type="checkbox" name="[]" id="">
-              </div>
-              <div class="col">
-                <input type="checkbox" name="[]" id="">
-              </div>
-              <div class="col">
-                <input type="checkbox" name="[]" id="">
+
+              <div class="row align-items-center">
+                <div class="col-2 align-items-center">
+                  <label>Sumber Data :</label>
+                </div>
+                  <div class="col-md-2">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                                <label>Pasien</label>
+                            </div> 
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">    
+                      <div class="row align-items-center">
+                          <div class="col-3">
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                                  <label>Keluarga</label>
+                               </div> 
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">    
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                                      <label>Lainnya</label>
+                                  </div> 
+                              </div>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                  <label>Identitas Pasien</label>
+                </div>
+
+                <div class="row align-items-center">
+                  <div class="col-2">
+                    <label>Agama :</label>
+                  </div>
+                  
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Islam</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Protestan</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Katholik</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Lainnya</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                                <input class="form-control" type="text" name="" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row align-items-center">
+                  <div class="col-2">
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Hindu</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Budha</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Konghucu</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row align-items-center">
+                  <div class="col-2">
+                    <label>Pendidikan :</label>
+                  </div>
+                  
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>SD</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>SMP</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>SMA</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Lainnya</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                                <input class="form-control" type="text" name="" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row align-items-center">
+                  <div class="col-2">
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Diploma</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>S1</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>S2</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>S3</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <tr>
+            <td>
+              <h5><b>KELUHAN UTAMA:</b></h5>
+            </td>
+            <td width="70%">
+              <textarea class="form-control"  name="" id="" cols="6" rows="1"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h5><b>KELUHAN SAAT INI:</b></h5>
+            </td>
+            <td width="70%">
+              <textarea class="form-control"  name="" id="" cols="6" rows="3"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h5><b>RIWAYAT KESEHATAN YANG LALU:</b></h5>
+            </td>
+            <td width="70%">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <label>a.</label>
+                  <label>Riwayat MRS sebelumnya ? : </label>
+                </div>
+                <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Tidak</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Ya,lamanya</label>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                          <input class="form-control" type="text" name="" id="">
+                      </div>
+                      <div class="col-1">
+                        <label>hr,</label>
+                      </div>
+                    </div>
+                  </div>
               </div>
 
-          </div>
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <label>alasan:</label>
+                </div>
+                <div class="col-4">
+                  <input class="form-control" type="text" name="" id="">
+                </div>
+              </div>
+
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <label>b.</label>
+                  <label>Riwayat dioperasi ? : </label>
+                </div>
+                <div class="col-md-1">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Tidak</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Ya,jenisnya</label>
+                        </div>
+                      </div>
+                      <div class="col-7">
+                          <input class="form-control" type="text" name="" id="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h5><b>RIWAYAT MINUM OBAT</b></h5>
+              <p>(termasuk obat yang masih digunakan saat ini)</p>
+
+            </td>
+            <td>
+              <div class="row align-items-center">
+
+                <div class="col-md-5">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                      <label>Tidak ada</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row align-items-center">
+                
+                <div class="col-md-9">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                      <label>Ada, nama obat dan dosis</label>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <input class="form-control" type="text" name="" id="">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </td>
+          </tr>
+
+          </td>
+        </tr>
+
+      </table>
+
+      <table class="table table-bordered mb-0" style="border: 1px solid black;">
+        <tr>
+          <td class="text-center" colspan="2">
+            <h5><b>RIWAYAT ALERGI</b></h5>
+              
+             <div class="row align-items-center">
+
+              <div class="col-6">
+                <div class="row align-items-center">
+                   <div class="col-md-3">
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                      <label>Tidak</label>
+                     </div>
+                   </div>
+                </div>
+                </div>
+
+             </div>
+
+                <div class="row align-items-center">
+                <div class="col-8">
+                <div class="row align-items-center">
+                   <div class="col-md-4">
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                      <label>Alergi obat, sebutkan</label>
+                     </div>
+                   </div>
+                   <div class="col-3">
+                     <input class="form-control" type="text" name="" id="">
+                   </div>
+                   <div class="col-1">
+                     <label>Reaksi</label>
+                   </div>
+                   <div class="col-4">
+                     <input class="form-control" type="text" name="" id="">
+                   </div>
+
+                </div>
+                </div>
+                </div>
+
+                <div class="row align-items-center">
+                <div class="col-8">
+                <div class="row align-items-center">
+                   <div class="col-md-4">
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                      <label>&nbsp;&nbsp;&nbsp;&nbsp;Alergi makanan, sebutkan</label>
+                     </div>
+                   </div>
+                   <div class="col-3">
+                     <input class="form-control" type="text" name="" id="">
+                   </div>
+                   <div class="col-1">
+                     <label>Reaksi</label>
+                   </div>
+                   <div class="col-4">
+                     <input class="form-control" type="text" name="" id="">
+                   </div>
+
+                </div>
+                </div>
+                </div>
+
+                <div class="row align-items-center">
+                <div class="col-8">
+                <div class="row align-items-center">
+                   <div class="col-md-4">
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                      <label>&nbsp;&nbsp;&nbsp;&nbsp;Alergi lainnya, sebutkan</label>
+                     </div>
+                   </div>
+                   <div class="col-3">
+                     <input class="form-control" type="text" name="" id="">
+                   </div>
+                   <div class="col-1">
+                     <label>Reaksi</label>
+                   </div>
+                   <div class="col-4">
+                     <input class="form-control" type="text" name="" id="">
+                   </div>
+
+                </div>
+                </div>
+                </div>
+
+              <div class="row align-items-center">
+
+                <div class="col-9">
+                  <div class="row align-items-center">
+                     <div class="col-md-3">
+                       <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                        <label>Tidak diketahui</label>
+                       </div>
+                     </div>
+                  </div>
+                  </div>
+
+             </div>
+
+          </td>
+        </tr>
+        <tr>
+          <td width="30%">
+            <h5><b>RIWAYAT PENYAKIT KELUARGA</b></h5>
+          </td>
+          <td width="70%">
+            <div class="row align-items-center">
+
+              <div class="col-md-2">
+                    <div class="row align-items-center">
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Tidak ada</label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                  <div class="col-md-2">
+                    <div class="row align-items-center">
+                      <div class="col-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Jantung</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Asma</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>DM</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Hipertensi</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                          <label>Lainnya</label>
+                        </div>
+                      </div>
+                      <div class="col-7">
+                        <input class="form-control" type="text" name="" id="">
+                      </div>
+                    </div>
+                  </div>
+            </div>
           </td>
         </tr>
       </table>
+
+      <table class="table table-bordered" style="border: 1px solid black;">
+        <tr>
+          <td>
+            <h5 class="text-center"><b>RIWAYAT EKONOMI</b></h5>
+            <div class="row align-items-center">
+              <h6><b>Status Ekonomi</b></h6>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-3">
+            <h6>Jaminan kesehatan yang digunakan :</h6>
+            </div>
+            <div class="col-md-1">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                     <label>Mandiri</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                     <label>BPJS</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                     <label>Lainnya</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                        <input class="form-control" type="text" name="" id="">
+                      </div>
+              </div>
+            </div>
+          </div>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td class="text-center">
+            <h5><b>PSIKO-SOSIAL-SPIRITUAL</b></h5>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          <h6><b>Status Psikologis</b></h6>
+          
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                     <label>Tenang, kooperatif</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                     <label>Kejiwaan; gelisah, murung, ketakutan</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <div class="row align-items-center">
+                <div class="col-8 mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                     <input class="form-control" type="text" name="" id="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="" name="[]" value="">
+                    <label>Perubahan suasana hati, gangguan tidur, sulit berpikir</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6><b>Status Sosial</b></h6>
+
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <div class="row align-items-center">
+                <div class="col-5">
+                  <div>
+                    <label>Tempat tinggal</label>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </td>
+        </tr>
+        
+      </table>
+
+
+
       </form>
     </div>
 

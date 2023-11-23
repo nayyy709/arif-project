@@ -23,19 +23,19 @@
     <script src="js/jquery.signature.js"></script>
 
 
-    <script>
-    $(function() {
-        var sig = $('#sig').signature();
-        $('#disable').click(function() {
-            var disable = $(this).text() === 'Disable';
-            $(this).text(disable ? 'Enable' : 'Disable');
-            sig.signature(disable ? 'disable' : 'enable');
-        });
-        $('#clear').click(function() {
-            sig.signature('clear');
-        });
-    });
-    </script>
+      <script>
+      $(function() {
+          var sig = $('#sig').signature();
+          $('#disable').click(function() {
+              var disable = $(this).text() === 'Disable';
+              $(this).text(disable ? 'Enable' : 'Disable');
+              sig.signature(disable ? 'disable' : 'enable');
+          });
+          $('#clear').click(function() {
+              sig.signature('clear');
+          });
+      });
+      </script>
 
     <script>
     $(function() {
@@ -109,7 +109,7 @@
                 <label>No.MR:</label>
             </div>
             <div class="col-8">
-                <input class="form-control" type="text" name="" id="" placeholder="No.MR">
+                <input class="form-control" type="text" name="v_01" id="v_01" placeholder="No.MR">
             </div>
             </div>
 
@@ -118,7 +118,7 @@
                 <label>Nama Lengkap</label>
             </div>
             <div class="col-8">
-                <input class="form-control" type="text" name="" id="" placeholder="Nama Lengkap">
+                <input class="form-control" type="text" name="v_02" id="v_02" placeholder="Nama Lengkap">
             </div>
             </div>
 
@@ -127,7 +127,7 @@
                 <label>Tanggal Lahir</label>
             </div>
             <div class="col-8">
-                <input class="form-control" type="date" name="" id="">
+                <input class="form-control" type="date" name="v_03" id="v_03">
             </div>
             </div>
           </td>
@@ -181,7 +181,7 @@
         <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Saya setuju Rumah Sakit wajib menjamin kerahasiaan informasi medis saya baik untuk kepentingan perawatan dan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pengobatan, pendidikan maupun penelitian kecuali saya mengungkapkan sendiri atau orang lain yang saya beri kuasa<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;untuk itu.</h5>
 
         <!-- 4 -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Saya <select name="">
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Saya <select name="v_04" id="v_04">
                         <option selected>Pilih</option> 
                         <option value="1">memberikan</option>
                         <option value="2">tidak memberikan</option>
@@ -189,27 +189,27 @@
 
         <!-- a -->
         <form>
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <input type="text" name="" id="" placeholder="isi"></h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <input type="text" name="v_05" id="v_05" placeholder="isi"></h5>
 
         <!-- b -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <input type="text" name="" id="" placeholder="isi"></h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <input type="text" name="v_06" id="v_06" placeholder="isi"></h5>
 
         <!-- c -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. <input type="text" name="" id="" placeholder="isi"></h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. <input type="text" name="v_07" id="v_07" placeholder="isi"></h5>
         </form>
 
         <!-- 5 -->
         <h5 class="mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Pengambilan dokumentasi saya berupa foto, rekaman wawancara di luar kepentingan keperawatan dan pengobatan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;harus seijin saya.</h5>
 
         <!-- 6 -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Saya <select name="">
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Saya <select name="v_08" id="v_08">
                         <option selected>Pilih</option> 
                         <option value="1">menginginkan</option>
                         <option value="2">tidak menginginkan</option>
-                        </select>&nbsp;(*coret salah satu)privasi khusus, jika ada&nbsp;<input type="text" name="" id="" placeholder="isi">&nbsp;dan tidak<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ingin dikunjungi oleh <input type="text" name="" id="" placeholder="isi"></h5>
+                        </select>&nbsp;(*coret salah satu)privasi khusus, jika ada&nbsp;<input type="text" name="v_09" id="v_09" placeholder="isi">&nbsp;dan tidak<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ingin dikunjungi oleh <input type="text" name="v_10" id="v_10" placeholder="isi"></h5>
 
         <!-- alert -->
-        <h5 class="mt-3"><b>Dengan ini saya menyatakan bahwa saya telah menerima informasi sebagaimana di atas dan telah<br><select name="">
+        <h5 class="mt-3"><b>Dengan ini saya menyatakan bahwa saya telah menerima informasi sebagaimana di atas dan telah<br><select name="v_11" id="v_11">
                         <option selected>Pilih</option> 
                         <option value="1">memahami</option>
                         <option value="2">tidak memahami</option>
@@ -222,15 +222,15 @@
       <table class="table table-bordered mb-5">
         <tr>
           <td class="text-center">
-            Bengkulu,<input type="date" name="" id="">
+            Bengkulu,<input type="date" name="v_12" id="v_12">
           </td>
           <td class="text-center">
-            Jam: <input type="time" name="" id=""> WIB
+            Jam: <input type="time" name="v_13" id="v_13"> WIB
           </td>
         </tr>
         <tr>
           <td class="text-center">
-            Disetujui oleh <select name="">
+            Disetujui oleh <select name="v_14" id="v_14">
                               <option selected>Pilih</option>
                               <option value="1">Pasien</option>
                               <option value="2">Keluarga Pasien</option>
@@ -267,13 +267,13 @@
         </tr>
         <tr>
           <td class="text-center">
-            <input type="text" name="" id="" style="width: 150px;">
+            <input type="text" name="v_15" id="v_15" style="width: 150px;">
           </td>
           <td class="text-center">
-            <input type="text" name="" id="" style="width: 150px;">
+            <input type="text" name="v_16" id="v_16" style="width: 150px;">
           </td>
           <td class="text-center">
-            <input type="text" name="" id="" style="width: 150px;">
+            <input type="text" name="v_17" id="v_17" style="width: 150px;">
           </td>
         </tr>
       </table>

@@ -133,7 +133,7 @@
           <label>No RM</label>
           </div>
           <div class="col-7">
-          <input class="form-control" type="text" name="v_01" id="v_01">
+          <input class="form-control" type="text" name="no_Registration" id="no_Registration" readonly>
           </div>
         </div>
         
@@ -142,7 +142,7 @@
           <label>Nama Lengkap</label>
         </div>
           <div class="col-7">
-              <input class="form-control" type="text" name="v_02" id="v_02">
+              <input class="form-control" type="text" name="thename" id="thename" readonly>
             </div>
         </div>
 
@@ -151,13 +151,13 @@
             <label>Tanggal Lahir</label>
             </div>
             <div class="col-3">
-            <input class="form-control" type="date" name="v_03" id="v_03">
+            <input class="form-control" type="date" name="date_of_birth" id="date_of_birth" readonly>
             </div>
           <div class="col-md-1">
             <label >Umur</label>
           </div>
           <div class="col-3">
-            <input class="form-control" type="text" name="v_04" id="v_04">
+            <input class="form-control" type="text" name="ageyear" id="ageyear" readonly>
           </div>
         </div>
 
@@ -167,12 +167,12 @@
         </div>
           <div class="col-7">
             <div class="form-check-inline">
-              <input type="radio" class="form-check-input" name="t_01" id="t_01_lk" value="laki">
-              <label class="form-check-label" for="t_01_lk">Laki-laki</label>
+              <input type="radio" class="form-check-input" name="gender" id="gender" value="laki">
+              <label class="form-check-label" for="gender">Laki-laki</label>
             </div>
             <div class="form-check-inline">
-              <input type="radio" class="form-check-input" name="t_01" id="t_01_pr" value="perempuan" >
-              <label class="form-check-label" for="t_01_pr">Perempuan</label>
+              <input type="radio" class="form-check-input" name="gender" id="gender" value="perempuan" >
+              <label class="form-check-label" for="gender">Perempuan</label>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@
           <label >Alamat</label>
           </div>
           <div class="col-7">
-          <textarea class="form-control" name="v_05" id="v_05" cols="6" rows="2"></textarea>
+          <textarea class="form-control" name="theaddress" id="theaddress" cols="6" rows="2" readonly></textarea>
           </div>
         </div>
 
@@ -206,16 +206,10 @@
        
         <div class="row">
           <div class="col-md-5">
-            <label>Tanggal</label>
+            <label>Tanggal dan Pukul</label>
           </div>
-          <div class="col-3">
-            <input class="form-control" type="date" name="v_08" id="v_08">
-          </div>
-          <div class="col-1">
-            <label >Pukul</label>
-          </div>
-            <div class="col-3">
-            <input class="form-control" type="time" name="v_09" id="v_09">
+          <div class="col-4">
+            <input class="form-control" type="datetime-local" name="examination_date" id="examination_date" readonly>
           </div>
         </div>
 
@@ -586,20 +580,20 @@
                         if($v_02 == $t_02){
                     ?>
                             <p>
-                                Yang bertanda tangan dibawah ini, Saya, nama "<?= $v_02; ?>" umur "<?= $v_04; ?>" tahun, "<?= $t_01; ?>",
+                                Yang bertanda tangan dibawah ini, Saya, nama "<?= $v_02; ?>" umur "<?= $v_04; ?>" tahun, "<?= $gender; ?>",
                                 alamat "<?= $v_05; ?>"  dengan ini menyatakan persetujuan untuk dilakukannya tindakan "<?= $v_14; ?>" terhadap saya         
                             </p><br>
                     <?php } else { ?>
                         
                             <p>
                                 Yang bertanda tangan dibawah ini, Saya, nama  <input type="text" name="v_28" id="v_28"> umur <input type="text" name="v_29" id="v_29"> tahun, 
-                                    <input type="radio" class="form-check-input" name="t_01" id="t_01_lk" value="laki">
-                                    <label class="form-check-label" for="t_01_lk">Laki-laki</label>
-                                    <input type="radio" class="form-check-input" name="t_01" id="t_01_pr" value="perempuan" >
-                                    <label class="form-check-label" for="t_01_pr">Perempuan</label>,
+                                    <input type="radio" class="form-check-input" name="gender" id="gender" value="laki">
+                                    <label class="form-check-label" for="gender">Laki-laki</label>
+                                    <input type="radio" class="form-check-input" name="gender" id="gender" value="perempuan" >
+                                    <label class="form-check-label" for="gender_pr">Perempuan</label>,
                                 alamat <input type="text" name="v_30" id="v_30">  dengan ini menyatakan persetujuan
                                 untuk dilakukannya tindakan "<?= $v_14; ?>" terhadap<input type="text" name="v_31" id="v_31">  saya
-                                bernama "<?= $v_02; ?>" umur "<?= $v_04; ?>" tahun, "<?= $t_01; ?>", alamat "<?= $v_05; ?>"
+                                bernama "<?= $v_02; ?>" umur "<?= $v_04; ?>" tahun, "<?= $gender; ?>", alamat "<?= $v_05; ?>"
 
                             </p>
                         <?php }; ?>
